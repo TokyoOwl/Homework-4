@@ -59,14 +59,9 @@ public:
 		resultstr[strlen(str) + strlen(otherString.str)] = '\0';
 		return resultstr;
 	}
-	void compare(const String& otherString)
+	int compare(const String& otherString)
 	{
-		if(strcmp(str, otherString.str) == 0)
-			cout << "Strings are equal\n";
-		else if(strcmp(str, otherString.str) > 0)
-			cout << "String1 bigger than String2\n";
-		else
-			cout << "String2 bigger than String1\n";
+		return strcmp(str, otherString.str);
 	}
 	void toUpper()
 	{
@@ -95,6 +90,12 @@ int main() {
 	String two("sLoVo");
 	cout << "String1: " << one.getCString() << endl;
 	cout << "String2: " << two.getCString() << endl;
+	if(one.compare(two) == 0)
+		cout << "Strings are equal\n";
+	else if(one.compare(two) > 0)
+		cout << "String1 bigger than String2\n";
+	else
+		cout << "String2 bigger than String1\n";
 	one.compare(two);
 	two.toUpper();
 	cout << "Uppered string: " << two.getCString() << endl;
