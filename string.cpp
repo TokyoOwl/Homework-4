@@ -22,7 +22,7 @@ public:
 			str[i] = c_str.str[i];
 		str[size] = '\0';
 	}
-	String operator=(const String &c_str)
+	String& operator=(const String &c_str)
 	{
 		str = c_str.str;
 		size = c_str.size;
