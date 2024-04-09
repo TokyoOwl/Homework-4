@@ -25,10 +25,7 @@ public:
 	String& operator=(const String &c_str)
 	{
 		size = c_str.size;
-		str = new char[size + 1];
-		for (int i = 0; i < size; i++)
-			str[i] = c_str.str[i];
-		str[size] = '\0';
+		str = c_str.str;
 	}
 	String(size_t count, char ch)
 	{
