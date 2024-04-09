@@ -10,15 +10,17 @@ public:
 	{
 		size = strlen(c_str);
 		str = new char[size + 1];
-		int i = 0;
-		for (; i < size; i++)
+		for (int i = 0; i < size; i++)
 			str[i] = c_str[i];
 		str[size] = '\0';
 	}
 	String(const String &c_str)
 	{
-		str = c_str.str;
-		size = c_str.size;
+		str = new char[size + 1];
+		size = strlen(c_str);
+		for (int i = 0; i < size; i++)
+			str[i] = c_str[i];
+		str[size] = '\0';
 	}
 	String operator=(const String &c_str)
 	{
