@@ -15,6 +15,16 @@ public:
 			str[i] = c_str[i];
 		str[size] = '\0';
 	}
+	String(const String &c_str)
+	{
+		str = c_str.str;
+		size = c_str.size;
+	}
+	String operator=(const String &c_str)
+	{
+		str = c_str.str;
+		size = c_str.size;
+	}
 	String(size_t count, char ch)
 	{
 		size = count;
@@ -75,6 +85,8 @@ public:
 	}
 };
 int main() {
+	/*Homework-4
+	===============================================
 	const char* c_str = "Hello ";
 	const char* newstr = "World!";
 	String mystring(c_str);
@@ -104,5 +116,15 @@ int main() {
 	String onechar(10, '9');
 	cout << onechar.getCString() << endl;
 	cout << onechar.getSize() << endl;
+	===============================================
+	*/
+	//Homework-5
+	String str1("Tomas");
+	String str2 = str1;
+	cout << str1.getCString() << endl << str2.getCString() << endl;
+	String hellostr("hello");
+	String worldstr("world");
+	worldstr = hellostr;
+	cout << hellostr.getCString() << endl << worldstr.getCString() << endl;
 	return 0;
 }
