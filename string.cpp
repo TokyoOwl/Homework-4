@@ -93,6 +93,8 @@ int main() {
 	cout << combined.getCString() << endl;
 	String one("slovo");
 	String two("sLoVo");
+	cout << "String1: " << one.getCString() << endl;
+	cout << "String2: " << two.getCString() << endl;
 	one.compare(two);
 	two.toUpper();
 	cout << "Uppered string: " << two.getCString() << endl;
