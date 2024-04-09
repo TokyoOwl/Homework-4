@@ -17,7 +17,7 @@ public:
 	String(const String &c_str)
 	{
 		str = new char[size + 1];
-		size = strlen(c_str.size);
+		size = c_str.size;
 		for (int i = 0; i < size; i++)
 			str[i] = c_str.str[i];
 		str[size] = '\0';
