@@ -79,7 +79,7 @@ public:
 			str[i] = tolower(str[i]);
 	}
 };
-void main() {
+int main() {
 	const char* c_str = "Hello ";
 	const char* newstr = "World!";
 	String mystring(c_str);
@@ -101,4 +101,5 @@ void main() {
 	String onechar(10, '9');
 	cout << onechar.getCString() << endl;
 	cout << onechar.getSize() << endl;
+	return 0;
 }
