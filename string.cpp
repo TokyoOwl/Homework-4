@@ -1,5 +1,6 @@
-#include<iostream>
+#include <iostream>
 #include <cstring>
+#include <string.h>
 using namespace std;
 class String {
 	char* str;
