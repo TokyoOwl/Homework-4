@@ -40,7 +40,7 @@ public:
 	void append(const char* otherstr)
 	{
 		char* resstr = new char[strlen(str)];
-		strcpy_s(resstr, strlen(str) + 1, str);
+		strcpy(resstr, str);
 		delete[] str;
 		str = new char[strlen(resstr) + strlen(otherstr) + 1];
 		for (size_t i = 0; i < strlen(resstr); i++)
