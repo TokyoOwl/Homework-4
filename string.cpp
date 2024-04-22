@@ -113,19 +113,19 @@ public:
 		this->second_name = second_name;
 		this->age = age;
 	}
-	display_info(int a)
+	void display_info(int a)
 	{
 		cout << name << endl;
 	}
-	display_info(int a, int b)
+	void display_info(int a, int b)
 	{
 		cout << name << second_name << endl;
 	}
-	display_info(int a, int b, int c)
+	void display_info(int a, int b, int c)
 	{
 		cout << name << age << endl;
 	}
-	display_info(int a, int b, int c, int d)
+	void display_info(int a, int b, int c, int d)
 	{
 		cout << name << second_name << age << endl;
 	}
