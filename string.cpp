@@ -172,7 +172,7 @@ int main() {
 	String worldstr("world");
 	worldstr = hellostr;
 	cout << hellostr.getCString() << endl << worldstr.getCString() << endl;
-	Perosn Mike("Mike", "Vazovsky", 29);
+	Person Mike("Mike", "Vazovsky", 29);
 	Mike.display_info(1);
 	Mike.display_info(1, 2);
 	Mike.display_info(1, 2, 3);
