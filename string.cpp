@@ -119,15 +119,15 @@ public:
 	}
 	void display_info(int a, int b)
 	{
-		cout << name << second_name << endl;
+		cout << name << " " << second_name << endl;
 	}
 	void display_info(int a, int b, int c)
 	{
-		cout << name << age << endl;
+		cout << name << " " << age << endl;
 	}
 	void display_info(int a, int b, int c, int d)
 	{
-		cout << name << second_name << age << endl;
+		cout << name << " " << second_name << " " << age << endl;
 	}
 };
 int main() {
@@ -176,5 +176,6 @@ int main() {
 	Mike.display_info(1);
 	Mike.display_info(1, 2);
 	Mike.display_info(1, 2, 3);
+	Mike.display_info(1, 2, 3, 4);
 	return 0;
 }
