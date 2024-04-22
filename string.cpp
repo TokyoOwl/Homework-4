@@ -14,22 +14,6 @@ public:
 			str[i] = c_str[i];
 		str[size] = '\0';
 	}
-	String(const String &c_str)
-	{
-		size = c_str.size;
-		str = new char[size + 1];
-		for (int i = 0; i < size; i++)
-			str[i] = c_str.str[i];
-		str[size] = '\0';
-	}
-	String& operator=(const String &c_str)
-	{
-		size = c_str.size;
-		str = new char[size + 1];
-		for (int i = 0; i < size; i++)
-			str[i] = c_str.str[i];
-		str[size] = '\0';
-	}
 	String(size_t count, char ch)
 	{
 		size = count;
@@ -88,6 +72,63 @@ public:
 		for (int i = 0; i < strlen(str); i++)
 			str[i] = tolower(str[i]);
 	}
+	String(const String &c_str) //конструктор копирования
+	{
+		size = c_str.size;
+		str = new char[size + 1];
+		for (int i = 0; i < size; i++)
+			str[i] = c_str.str[i];
+		str[size] = '\0';
+	}
+	String& operator=(const String &c_str) //оператор присваивания
+	{
+		size = c_str.size;
+		str = new char[size + 1];
+		for (int i = 0; i < size; i++)
+			str[i] = c_str.str[i];
+		str[size] = '\0';
+	}
+	void print_data(int data)
+	{
+		cout << data << endl;
+	}
+	void print_data(double data)
+	{
+		cout << data << endl;
+	}
+	void print_data(string data)
+	{
+		cout << data << endl;
+	}
+};
+class Person
+{
+	string name;
+	int age;
+	string second_name;
+public:
+	Person(string name, string second_name, int age)
+	{
+		this->name = name;
+		this->second_name = second_name;
+		this->age = age;
+	}
+	display_info(int a)
+	{
+		cout << name << endl;
+	}
+	display_info(int a, int b)
+	{
+		cout << name << second_name << endl;
+	}
+	display_info(int a, int b, int c)
+	{
+		cout << name << age << endl;
+	}
+	display_info(int a, int b, int c, int d)
+	{
+		cout << name << second_name << age << endl;
+	}
 };
 int main() {
 	/*Homework-4
@@ -131,5 +172,9 @@ int main() {
 	String worldstr("world");
 	worldstr = hellostr;
 	cout << hellostr.getCString() << endl << worldstr.getCString() << endl;
+	Perosn Mike("Mike", "Vazovsky", 29);
+	Mike.display_info(1);
+	Mike.display_info(1, 2);
+	Mike.display_info(1, 2, 3);
 	return 0;
 }
