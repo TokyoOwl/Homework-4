@@ -44,7 +44,7 @@ void String::append(const char* otherstr)
 		str[j] = otherstr[j - strlen(resstr)];
 	str[strlen(resstr) + strlen(otherstr)] = '\0';
 }
-String::String concat(const String& otherString)
+String String::concat(const String& otherString)
 	{
 		char* resultstr = new char[strlen(str) + strlen(otherString.str) + 1];
 		for (size_t i = 0; i < strlen(str); i++)
