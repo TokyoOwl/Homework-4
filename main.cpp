@@ -3,6 +3,13 @@
 using namespace std;
 int main()
 {
+	String str1("Tomas");
+	String str2 = str1;
+	cout << str1.getCString() << endl << str2.getCString() << endl;
+	String hellostr("hello");
+	String worldstr("world");
+	worldstr = hellostr;
+	cout << hellostr.getCString() << endl << worldstr.getCString() << endl;
 	Circle a(5);
 	a.print_area();
   	Rectangle b(2, 4);
