@@ -58,7 +58,7 @@ public:
     cout << calculate_area(base, height) << endl;
   }
 };
-void main()
+int main()
 {
   Circle a(5);
   a.print_area();
@@ -66,4 +66,5 @@ void main()
   b.print_area();
   Triangle c(4, 10);
   c.print_area();
+  return 0;
 }
