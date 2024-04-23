@@ -83,6 +83,7 @@ String String::concat(const String& otherString)
 		for (int i = 0; i < size; i++)
 			str[i] = c_str.str[i];
 		str[size] = '\0';
+		return *this;
 	}
 	void String::print_data(int data)
 	{
