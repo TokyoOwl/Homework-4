@@ -23,6 +23,10 @@ public:
   Circle(double radius){
     this->radius = radius;
   }
+  double calculate_area(double radius)
+  {
+    return 3.14*radius*radius;
+  }
   void print_area()
   {
     cout << calculate_area(radius) << endl;
@@ -38,6 +42,10 @@ public:
     this->length = length;
     this->width = width;
   }
+  double calculate_area(double length, double width)
+  {
+    return length * width;
+  }
   void print_area()
   {
     cout << calculate_area(length, width) << endl;
@@ -52,6 +60,10 @@ public:
   {
     this->base = base;
     this->height = height;
+  }
+  double calculate_area(int base, int height)
+  {
+    return 0.5*base*height;
   }
   void print_area()
   {
