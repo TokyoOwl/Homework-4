@@ -76,7 +76,7 @@ String::String concat(const String& otherString)
 			str[i] = c_str.str[i];
 		str[size] = '\0';
 	}
-	String::operator=(const String c_str) //оператор присваивания
+	String& String::operator=(const String &c_str) //оператор присваивания
 	{
 		size = c_str.size;
 		str = new char[size + 1];
