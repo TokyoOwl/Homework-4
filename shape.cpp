@@ -33,7 +33,7 @@ class Rectangle : Shape
   double length;
   double width;
 public:
-  Rectangle(dobule length, double width)
+  Rectangle(double length, double width)
   {
     this->length = length;
     this->width = width;
