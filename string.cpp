@@ -96,7 +96,6 @@ String String::concat(const String& otherString)
 	{
 		cout << data << endl;
 	}
-};
 /*
 int main()
 {
