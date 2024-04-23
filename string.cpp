@@ -78,7 +78,7 @@ String String::concat(const String& otherString)
 	}
 	String& String::operator=(const String &c_str) //оператор присваивания
 	{
-		if(c_str == str)
+		if( for(int i =0; i<size; i++){ str[i] == c_str.str[i]); } )
 			return *this;
 		size = c_str.size;
 		delete[] str;
