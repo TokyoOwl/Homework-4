@@ -96,39 +96,3 @@ String String::concat(const String& otherString)
 	{
 		cout << data << endl;
 	}
-/*
-int main()
-{
-	Homework-4
-	===============================================
-	const char* c_str = "Hello ";
-	const char* newstr = "World!";
-	String mystring(c_str);
-	cout << mystring.getCString() << endl;
-	cout << mystring.getSize() << endl;
-	mystring.append(newstr);
-	cout << mystring.getCString() << endl;
-	String hellostr("hello");
-	String worldstr("world");
-	String combined = hellostr.concat(worldstr);
-	cout << combined.getCString() << endl;
-	String one("slovo");
-	String two("sLoVo");
-	cout << "String1: " << one.getCString() << endl;
-	cout << "String2: " << two.getCString() << endl;
-	if(one.compare(two) == 0)
-		cout << "Strings are equal\n";
-	else if(one.compare(two) > 0)
-		cout << "String1 bigger than String2\n";
-	else
-		cout << "String2 bigger than String1\n";
-	one.compare(two);
-	two.toUpper();
-	cout << "Uppered string: " << two.getCString() << endl;
-	one.toLower();
-	cout << "Lowered string: "<<one.getCString() << endl;
-	String onechar(10, '9');
-	cout << onechar.getCString() << endl;
-	cout << onechar.getSize() << endl;
-}
-*/
