@@ -70,6 +70,8 @@ String String::concat(const String& otherString)
 	}
 	String::String(const String &c_str) //конструктор копирования
 	{
+		if(&c_str == this)
+			return *this;
 		size = c_str.size;
 		str = new char[size + 1];
 		for (int i = 0; i < size; i++)
@@ -78,6 +80,7 @@ String String::concat(const String& otherString)
 	}
 	String& String::operator=(const String &c_str) //оператор присваивания
 	{
+		
 		size = c_str.size;
 		delete[] str;
 		str = new char[size + 1];
