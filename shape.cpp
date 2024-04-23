@@ -48,7 +48,7 @@ class Triangle : Shape
   int base;
   int height;
 public:
-  Rectangle(int base, int height)
+  Triangle(int base, int height)
   {
     this->base = base;
     this->height = height;
