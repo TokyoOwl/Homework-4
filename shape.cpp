@@ -3,17 +3,9 @@ using namespace std;
 class Shape
 {
 public:
-  virtual double calculate_area(double radius)
+  virtual double calculate_area(double base1, double base2, double height)
   {
-    return 3.14*radius*radius;
-  }
-virtual double calculate_area(int base, int height)
-  {
-    return 0.5*base*height;
-  }
-virtual double calculate_area(double length, double width)
-  {
-    return length * width;
+    return ((base1 + base2) / 2 ) * height
   }
 };
 class Circle : Shape 
