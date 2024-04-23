@@ -13,11 +13,11 @@ Person::Person(string name, string second_name, int age)
 	{
 		cout << name << " " << second_name << endl;
 	}
-  void Person::display_info(int a, int b, int c)
+  	void Person::display_info(int a, int b, int c)
 	{
 		cout << name << " " << age << endl;
 	}
-  void Person::display_info(int a, int b, int c, int d)
+  	void Person::display_info(int a, int b, int c, int d)
 	{
 		cout << name << " " << second_name << " " << age << endl;
 	}
