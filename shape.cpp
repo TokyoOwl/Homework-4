@@ -1,5 +1,5 @@
 #include "shape.h"
-virtual double Shape::calculate_area(double base1, double base2, double height)
+double Shape::calculate_area(double base1, double base2, double height)
 {
   return ((base1 + base2) / 2 ) * height;
 }
