@@ -10,6 +10,9 @@ int main()
 	String hellostr("hello");
 	String worldstr("world");
 	worldstr = hellostr;
+	String thisstr("str");
+	thisstr = thisstr;
+	cout << "Test for operator=\n" << thisstr.getCString() << endl;
 	cout << hellostr.getCString() << endl << worldstr.getCString() << endl;
 	Circle a(5);
 	a.print_area();
